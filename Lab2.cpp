@@ -1,4 +1,6 @@
-//token categorization
+//token
+//mehnaz
+
 #include<iostream>
 #include<string>
 
@@ -7,22 +9,27 @@ using namespace std;
 int main() {
 
 string expression;
-string operators;
+
+     string operators;
 
      cout << "Enter an expression: ";
     cin >> expression;
 
 for (char ch : expression) {
-if (ch == '+' || ch == '-' || ch == '*' || ch == '/')
+  if (ch == '+' || ch == '-' || ch == '*' || ch == '/')
     {
-            operators += ch;
-        }
+         operators += ch;
+       
+    }
     }
 
-    if (!operators.empty()) {
+    if (!operators.empty())
+    {
 
-        cout << "Operators are: " << operators << endl;
-    } else {
+         cout << "Operators are: " << operators << endl;
+    } 
+    else
+    {
         cout << "No operators found" << endl;
 }
 
